@@ -1,0 +1,167 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  a {
+    color: #007acc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #005f99;
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    background-color: #fff;
+    color: #007acc;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #007acc;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #007acc;
+  }
+  
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    color: #005f99;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #e6f0fa;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  nav a {
+    color: #007acc;
+    font-weight: bold;
+    margin: 0 1rem;
+  }
+  
+  /* Main Section Styling */
+  section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Forms */
+  form {
+    margin-top: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #005f99;
+  }
+  
+  /* Project Section (if reused elsewhere) */
+  .project {
+    margin-bottom: 2rem;
+  }
+  
+  .project-screenshot {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button.projectDetailsBtn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button.projectDetailsBtn:hover {
+    background-color: #555;
+  }
+  
+  /* Filter Container (optional for projects page) */
+  #filterContainer {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #filterContainer label {
+    margin: 0 1rem;
+  }
+  
+  #applyFilterBtn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #applyFilterBtn:hover {
+    background-color: #005f99;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+  }
+  

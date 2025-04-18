@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adam Nichols - IT Professional</title>
+  <link rel="icon" href="Favicon.png" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #fff;
+      color: #007acc;
+      padding: 1.5rem;
+      text-align: center;
+      border-bottom: 2px solid #007acc;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #007acc;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: #005f99;
+    }
+
+    nav {
+      background-color: #e6f0fa;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+    }
+
+    nav a {
+      color: #007acc;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #005f99;
+      text-decoration: underline;
+    }
+
+    #darkModeToggle {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      padding: 0.4rem 0.8rem;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #darkModeToggle:hover {
+      background-color: #005f99;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .project-screenshot {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    .project {
+      margin-bottom: 2rem;
+    }
+
+    button.projectDetailsBtn {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button.projectDetailsBtn:hover {
+      background-color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    #filterContainer {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    #filterContainer label {
+      margin: 0 1rem;
+    }
+
+    #applyFilterBtn {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #applyFilterBtn:hover {
+      background-color: #005f99;
+    }
+
+    a {
+      color: #007acc;
+    }
+
+    a:hover {
+      color: #005f99;
+    }
+
+    /* Dark mode styles */
+    .dark-mode {
+      background-color: #1e1e1e;
+      color: #eaeaea;
+    }
+
+    .dark-mode header {
+      background-color: #2a2a2a;
+      color: #66ccff;
+      border-bottom: 2px solid #66ccff;
+    }
+
+    .dark-mode header h1,
+    .dark-mode header p {
+      color: #66ccff;
+    }
+
+    .dark-mode nav {
+      background-color: #2a2a2a;
+      border-bottom: 1px solid #444;
+    }
+
+    .dark-mode nav a {
+      color: #66ccff;
+    }
+
+    .dark-mode nav a:hover {
+      color: #99ddff;
+    }
+
+    .dark-mode section {
+      background-color: #2e2e2e;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .dark-mode h2 {
+      color: #eaeaea;
+    }
+
+    .dark-mode footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+    }
+
+    .dark-mode .projectDetailsBtn {
+      background-color: #444;
+      color: white;
+    }
+
+    .dark-mode .projectDetailsBtn:hover {
+      background-color: #666;
+    }
+
+    .dark-mode #applyFilterBtn {
+      background-color: #66ccff;
+      color: #1e1e1e;
+    }
+
+    .dark-mode #applyFilterBtn:hover {
+      background-color: #99ddff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adam Nichols</h1>
+    <p>IT Support | Project Management | Data Analytics</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#certs">Certifications</a>
+    <a href="#skills">Skills</a>
+    <a href="contact.html">Contact</a>
+    <a href="analytics-dashboard.html">Analytics Dashboard</a>
+    <a href="https://www.linkedin.com/in/adam-nichols-432583231" target="_blank">LinkedIn</a>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a versatile and driven IT professional with a strong foundation in technical support, network administration, cybersecurity, and project coordination. With hands-on experience across educational and enterprise environments, I’ve led infrastructure upgrades, supported end users, and contributed to full-scale IT projects using Agile and SDLC methodologies. My academic background, combined with real-world experience, has equipped me to troubleshoot complex systems, secure networks, and manage technical initiatives from planning to execution. I’m passionate about leveraging technology to solve problems, improve efficiency, and make a meaningful impact—whether it’s optimizing a help desk system or designing a scalable network. I bring a proactive mindset, strong communication skills, and a commitment to continuous learning in everything I do.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div id="filterContainer">
+      <h3>Filter Projects by Technology</h3>
+      <label><input type="checkbox" class="techFilter" value="Project Management" checked> Project Management</label>
+      <label><input type="checkbox" class="techFilter" value="Networking" checked> Networking</label>
+      <label><input type="checkbox" class="techFilter" value="Development" checked> Development</label>
+      <br><br>
+      <button id="applyFilterBtn">Apply Filter</button>
+    </div>
+
+    <div class="project" data-category="Project Management">
+      <h3>Resource Allocation Simulation Game</h3>
+      <p>• Completed 8 simulated projects on time and under budget by balancing scope, cost, time, and staff skills.</p>
+      <p>• Managed staffing conflicts, skill gaps, and risks using effective prioritization.</p>
+      <img src="Project Management Portfolio gnatt chart - Copy.png" alt="Project Management Simulation Screenshot" class="project-screenshot" />
+      <button class="projectDetailsBtn">View Details</button>
+    </div>
+
+    <div class="project" data-category="Networking">
+      <h3>Ellensburg School District IT Infrastructure Enhancements</h3>
+      <p>• Led network upgrades to improve infrastructure, security, and operational efficiency.</p>
+      <p>• Configured components like cabling, routing, Active Directory, Web & FTP, email, DHCP, and DNS.</p>
+      <button class="projectDetailsBtn">View Details</button>
+    </div>
+
+    <div class="project" data-category="Development">
+      <h3>Full-Stack Website Development</h3>
+      <p>• Designed and coded a modern eCommerce website, ensuring full compliance with HTML5 and CSS standards.</p>
+      <p>• Implemented responsive design and validated all code for optimal functionality and user experience.</p>
+      <button class="projectDetailsBtn">View Details</button>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="My Resume.pdf" target="_blank">View My Resume</a> |
+    <a href="My Resume.pdf" download>Download My Resume</a>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Operating Systems: Windows, Linux (basic CLI)</li>
+      <li>Tools: Google Workspace, Asana, ServiceNow</li>
+      <li>Languages: SQL, Python (beginner)</li>
+      <li>Soft Skills: Communication, Time Management, Teamwork</li>
+    </ul>
+  </section>
+
+  <section id="certs">
+    <h2>Certifications</h2>
+    <ul>
+      <li><a href="Google IT Support.pdf" target="_blank">Google IT Support Certificate</a></li>
+      <li><a href="Google Project Management Cert.pdf" target="_blank">Google Project Management Certificate</a></li>
+      <li><a href="Google Data Analytics Cert.pdf" target="_blank">Google Data Analytics Certificate</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Adam Nichols</p>
+  </footer>
+
+  <script>
+    document.getElementById('applyFilterBtn').addEventListener('click', () => {
+      const checkboxes = document.querySelectorAll('.techFilter');
+      const selected = Array.from(checkboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value);
+
+      const projects = document.querySelectorAll('.project');
+
+      projects.forEach(project => {
+        const category = project.getAttribute('data-category');
+        project.style.display = selected.includes(category) ? 'block' : 'none';
+      });
+    });
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+  </script>
+</body>
+</html>
